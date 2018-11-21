@@ -5,20 +5,15 @@ require_relative('../customer.rb')
 require_relative('../drink.rb')
 require_relative('../food.rb')
 
-class DrinkTest < MiniTest::Test
+class FoodTest < MiniTest::Test
 
   def setup()
-    @drink = Drink.new("Beer", 5, 5)
+    @food = Food.new("Crisps", 1, 1)
   end
 
-def test_drink_has_name()
-  assert_equal("Beer", @drink.drink_name)
+def test_food_has_name()
+  assert_equal("Crisps", @food.food_name)
 end
-
-def test_drink_has_price()
-  assert_equal(5, @drink.price)
-end
-
 
 
 
